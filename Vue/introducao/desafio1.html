@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Desafio 1</title>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <span><span>{{n1}}</span> + <span>{{n2}}</span> = </span>
+      <input type="text" v-model="res" />
+      <span v-if="parseInt(res) === n1 + n2">{{ acertou }}</span>
+      <span v-if="res !== 0 && parseInt(res) !== n1 + n2">{{ errou }}</span>
+    </div>
+    <script src="desafio1.js"></script>
+  </body>
+</html>
